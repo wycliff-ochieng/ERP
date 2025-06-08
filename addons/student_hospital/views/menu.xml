@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <menuitem id="school_menu" name="School" sequence="10" />
+
+    <!--<menuitem id="student_menu" name="Student" parent="school_menu" action="student_navigation" sequence="10" /> -->
+
+    <menuitem id="visits_menu" name="Visit" parent="school_menu" sequence="10" />
+
+    <menuitem id="prescription_menu" name="Prescription" parent="school_menu" sequence="10" />
+
+    <menuitem id="immunization_menu" name="Immunizations" parent="school_menu" sequence="10" />
+    s
+</odoo>
