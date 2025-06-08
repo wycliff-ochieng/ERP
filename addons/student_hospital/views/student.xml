@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="student_navigation" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">student.profile</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+     <menuitem id="student_menu" name="Student" parent="school_menu" action="student_navigation" sequence="10" />
+
+
+
+</odoo>
