@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_tree_estate_property" model="ir.ui.view">
+        <field name="name">estate.property.tree</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="expected_price"/>
+                <field name="selling_price"/>
+                <field name="bedrooms"/>
+                <field name="garden"/>
+                <field name="garage"/>
+                <field name="date_availability"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_form_estate_property" model="ir.ui.view">
+        <field name="name">estate.property.form</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="description"/>
+                        <field name="postcode"/>
+                        <field name="date_availability"/>
+                        <field name="expected_price"/>
+                        <field name="selling_price"/>
+                    </group>
+                    <group>
+                        <field name="bedrooms"/>
+                        <field name="living_area"/>
+                        <field name="facades"/>
+                        <field name="garage"/>
+                        <field name="garden"/>
+                        <field name="garden_area"/>
+                        <field name="garden_orientation"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
