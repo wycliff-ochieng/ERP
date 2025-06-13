@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <!-- calendar view-->
+    <record id="visits_lists_forms" model="ir.ui.view">
+        <field name="name">student_visits_calender</field>
+        <field name="model">student.visits</field>
+        <field name="arch" type="xml">
+            <calendar string="visits_calendar" date_start="date" color="doctor_id">
+                <field name="student_id"/>
+                <field name="date"/>
+                <field name="symptoms"/>
+                <field name="prescription"/>
+                <field name="description"/>
+                <field name="doctor_id"/>
+            </calendar>
+        </field>
+    </record> 
+
+    <!-- form view-->
+    <record id="visits_lists" model="ir.ui.view">
+        <field name="name">student_visits_tree</field>
+        <field name="model">student.visits</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="student_id"/>
+                <field name="date"/>
+                <field name="symptoms"/>
+                <field name="prescription"/>
+                <field name="description"/>
+                <field name="doctor_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="visits_form" model="ir.ui.view">
+        <field name="name">students_visits_form</field>
+        <field name="model">student.visits</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="student_id"/>
+                <field name="date"/>
+                <field name="symptoms"/>
+                <field name="prescription"/>
+                <field name="description"/>
+                <field name="doctor_id"/>
+            </form>
+        </field>
+    </record>
+
+</odoo>

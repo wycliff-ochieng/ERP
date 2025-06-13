@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <record id="visits_navigations" model="ir.actions.act_window">
+        <field name="name">Visit</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">student.visits</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="visiting" name="visit" parent="school_menu" sequence="20" action="visits_navigations"/>
+
+   <!-- <menuitem id="visits_menu" name="Visits" parent="school_menu" sequence="20" action="visits_navigations"/> -->
+</odoo>
